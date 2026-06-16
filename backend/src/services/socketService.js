@@ -5,7 +5,7 @@ const User = require('../models/User');
 const initSocket = (server) => {
   const io = socketIo(server, {
     cors: {
-      origin: process.env.FRONTEND_URL || 'https://cricket-match-finder-2-o.onrender.com',
+      origin: process.env.FRONTEND_URL || 'http://localhost:5174',
       methods: ['GET', 'POST'],
       credentials: true
     }

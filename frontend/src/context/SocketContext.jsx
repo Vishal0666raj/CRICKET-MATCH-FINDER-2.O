@@ -19,7 +19,7 @@ export const SocketProvider = ({ children }) => {
       return;
     }
 
-    const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5005';
+    const SOCKET_URL = import.meta.env.VITE_BACKEND_URL || 'https://cricket-match-finder-2-o.onrender.com';
     console.log(`Initializing Socket connection to: ${SOCKET_URL}`);
 
     const newSocket = io(SOCKET_URL, {

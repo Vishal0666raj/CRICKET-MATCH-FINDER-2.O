@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     default: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200',
     get: function (val) {
       if (val && val.startsWith('/uploads/')) {
-        const backendUrl = process.env.BACKEND_URL || 'http://localhost:5005';
+        const backendUrl = process.env.BACKEND_URL || 'https://cricket-match-finder-2-o.onrender.com';
         return `${backendUrl}${val}`;
       }
       return val;

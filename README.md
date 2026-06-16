@@ -47,7 +47,7 @@ PORT=5005
 MONGODB_URI=mongodb://127.0.0.1:27017/cricket-finder
 JWT_SECRET=supersecret_access_token_key_123456
 JWT_REFRESH_SECRET=supersecret_refresh_token_key_123456
-FRONTEND_URL=https://cricket-match-finder-2-o.onrender.com
+FRONTEND_URL=http://localhost:5174
 ```
 Start the development server:
 ```bash
@@ -65,7 +65,7 @@ Start the client application:
 ```bash
 npm run dev
 ```
-Open [https://cricket-match-finder-2-o.onrender.com](https://cricket-match-finder-2-o.onrender.com) in your browser.
+Open [http://localhost:5174](http://localhost:5174) in your browser.
 
 ---
 
