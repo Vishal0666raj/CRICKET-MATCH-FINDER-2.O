@@ -37,7 +37,7 @@ app.set('io', io);
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5174',
+    origin: process.env.FRONTEND_URL || 'https://cricket-match-finder-2-o.onrender.com',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
   })
